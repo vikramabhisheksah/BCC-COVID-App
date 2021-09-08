@@ -1,0 +1,216 @@
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("react"), require("msal"));
+	else if(typeof define === 'function' && define.amd)
+		define("react-aad-msal", ["react", "msal"], factory);
+	else if(typeof exports === 'object')
+		exports["react-aad-msal"] = factory(require("react"), require("msal"));
+	else
+		root["react-aad-msal"] = factory(root["react"], root["msal"]);
+})(window, function(__WEBPACK_EXTERNAL_MODULE__0__, __WEBPACK_EXTERNAL_MODULE__1__) {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// define __esModule on exports
+/******/ 	__webpack_require__.r = function(exports) {
+/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 		}
+/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 	};
+/******/
+/******/ 	// create a fake namespace object
+/******/ 	// mode & 1: value is a module id, require it
+/******/ 	// mode & 2: merge all properties of value into the ns
+/******/ 	// mode & 4: return value when already ns object
+/******/ 	// mode & 8|1: behave like require
+/******/ 	__webpack_require__.t = function(value, mode) {
+/******/ 		if(mode & 1) value = __webpack_require__(value);
+/******/ 		if(mode & 8) return value;
+/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
+/******/ 		var ns = Object.create(null);
+/******/ 		__webpack_require__.r(ns);
+/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
+/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
+/******/ 		return ns;
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__0__;
+
+/***/ }),
+/* 1 */
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__1__;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var _IAccountInfo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3);
+/* harmony import */ var _IAccountInfo__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_IAccountInfo__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (checked) */ if(__webpack_require__.o(_IAccountInfo__WEBPACK_IMPORTED_MODULE_0__, "IAccountInfo")) __webpack_require__.d(__webpack_exports__, "IAccountInfo", function() { return _IAccountInfo__WEBPACK_IMPORTED_MODULE_0__["IAccountInfo"]; });
+
+/* harmony reexport (checked) */ if(__webpack_require__.o(_IAccountInfo__WEBPACK_IMPORTED_MODULE_0__, "IMsalAuthProviderConfig")) __webpack_require__.d(__webpack_exports__, "IMsalAuthProviderConfig", function() { return _IAccountInfo__WEBPACK_IMPORTED_MODULE_0__["IMsalAuthProviderConfig"]; });
+
+/* harmony import */ var _IAuthProvider__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4);
+/* harmony import */ var _IAuthProvider__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_IAuthProvider__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony reexport (checked) */ if(__webpack_require__.o(_IAuthProvider__WEBPACK_IMPORTED_MODULE_1__, "IAccountInfo")) __webpack_require__.d(__webpack_exports__, "IAccountInfo", function() { return _IAuthProvider__WEBPACK_IMPORTED_MODULE_1__["IAccountInfo"]; });
+
+/* harmony reexport (checked) */ if(__webpack_require__.o(_IAuthProvider__WEBPACK_IMPORTED_MODULE_1__, "IMsalAuthProviderConfig")) __webpack_require__.d(__webpack_exports__, "IMsalAuthProviderConfig", function() { return _IAuthProvider__WEBPACK_IMPORTED_MODULE_1__["IMsalAuthProviderConfig"]; });
+
+/* harmony import */ var _IMsalAuthProviderConfig__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5);
+/* harmony import */ var _IMsalAuthProviderConfig__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_IMsalAuthProviderConfig__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony reexport (checked) */ if(__webpack_require__.o(_IMsalAuthProviderConfig__WEBPACK_IMPORTED_MODULE_2__, "IAccountInfo")) __webpack_require__.d(__webpack_exports__, "IAccountInfo", function() { return _IMsalAuthProviderConfig__WEBPACK_IMPORTED_MODULE_2__["IAccountInfo"]; });
+
+/* harmony reexport (checked) */ if(__webpack_require__.o(_IMsalAuthProviderConfig__WEBPACK_IMPORTED_MODULE_2__, "IMsalAuthProviderConfig")) __webpack_require__.d(__webpack_exports__, "IMsalAuthProviderConfig", function() { return _IMsalAuthProviderConfig__WEBPACK_IMPORTED_MODULE_2__["IMsalAuthProviderConfig"]; });
+
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 4 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(7);
+
+
+/***/ }),
+/* 7 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+
+// EXTERNAL MODULE: ./src/interfaces/index.ts
+var interfaces = __webpack_require__(2);
+
+// CONCATENATED MODULE: ./src/enums/AuthenticationActions.ts
+var AuthenticationActions;(function(AuthenticationActions){AuthenticationActions["Initializing"]="AAD_INITIALIZING";AuthenticationActions["Initialized"]="AAD_INITIALIZED";AuthenticationActions["LoginSuccess"]="AAD_LOGIN_SUCCESS";AuthenticationActions["LoginFailed"]="AAD_LOGIN_FAILED";AuthenticationActions["LoginError"]="AAD_LOGIN_ERROR";AuthenticationActions["ClearError"]="AAD_CLEAR_ERROR";AuthenticationActions["LogoutSuccess"]="AAD_LOGOUT_SUCCESS";AuthenticationActions["AcquiredIdTokenSuccess"]="AAD_ACQUIRED_ID_TOKEN_SUCCESS";AuthenticationActions["AcquiredIdTokenError"]="AAD_ACQUIRED_ID_TOKEN_ERROR";AuthenticationActions["AcquiredAccessTokenSuccess"]="AAD_ACQUIRED_ACCESS_TOKEN_SUCCESS";AuthenticationActions["AcquiredAccessTokenError"]="AAD_ACQUIRED_ACCESS_TOKEN_ERROR";AuthenticationActions["AuthenticatedStateChanged"]="AAD_AUTHENTICATED_STATE_CHANGED";})(AuthenticationActions||(AuthenticationActions={}));
+// CONCATENATED MODULE: ./src/enums/AuthenticationState.ts
+var AuthenticationState;(function(AuthenticationState){AuthenticationState["Unauthenticated"]="Unauthenticated";AuthenticationState["InProgress"]="InProgress";AuthenticationState["Authenticated"]="Authenticated";})(AuthenticationState||(AuthenticationState={}));
+// CONCATENATED MODULE: ./src/enums/LoginType.ts
+var LoginType;(function(LoginType){LoginType[LoginType["Popup"]=0]="Popup";LoginType[LoginType["Redirect"]=1]="Redirect";})(LoginType||(LoginType={}));
+// CONCATENATED MODULE: ./src/enums/TokenType.ts
+var TokenType;(function(TokenType){TokenType["IdToken"]="id_token";TokenType["AccessToken"]="access_token";})(TokenType||(TokenType={}));
+// CONCATENATED MODULE: ./src/enums/index.ts
+
+// CONCATENATED MODULE: ./src/AccessTokenResponse.ts
+function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}var AccessTokenResponse_AccessTokenResponse=function AccessTokenResponse(response){_classCallCheck(this,AccessTokenResponse);_defineProperty(this,"accessToken",'');_defineProperty(this,"scopes",[]);_defineProperty(this,"expiresOn",void 0);_defineProperty(this,"state",'');if(response.tokenType!==TokenType.AccessToken){throw new Error("Can't construct an AccessTokenResponse from a AuthResponse that has a token type of \"".concat(response.tokenType,"\"."));}this.accessToken=response.accessToken;this.expiresOn=response.expiresOn;this.scopes=response.scopes;this.state=response.accountState;};
+// CONCATENATED MODULE: ./src/IdTokenResponse.ts
+function IdTokenResponse_classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function IdTokenResponse_defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}var IdTokenResponse_IdTokenResponse=function IdTokenResponse(response){IdTokenResponse_classCallCheck(this,IdTokenResponse);IdTokenResponse_defineProperty(this,"idToken",void 0);IdTokenResponse_defineProperty(this,"state",'');if(response.tokenType!==TokenType.IdToken){throw new Error("Can't construct an IdTokenResponse from a AuthResponse that has a token type of \"".concat(response.tokenType,"\"."));}this.idToken=response.idToken;this.state=response.accountState;};
+// EXTERNAL MODULE: external "msal"
+var external_msal_ = __webpack_require__(1);
+
+// CONCATENATED MODULE: ./src/AuthenticationActionCreators.ts
+function AuthenticationActionCreators_classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function AuthenticationActionCreators_defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}var AuthenticationActionCreators=function AuthenticationActionCreators(){AuthenticationActionCreators_classCallCheck(this,AuthenticationActionCreators);};AuthenticationActionCreators_defineProperty(AuthenticationActionCreators,"initializing",function(){return{type:AuthenticationActions.Initializing};});AuthenticationActionCreators_defineProperty(AuthenticationActionCreators,"initialized",function(){return{type:AuthenticationActions.Initialized};});AuthenticationActionCreators_defineProperty(AuthenticationActionCreators,"loginSuccessful",function(data){return{payload:data,type:AuthenticationActions.LoginSuccess};});AuthenticationActionCreators_defineProperty(AuthenticationActionCreators,"loginFailed",function(){return{type:AuthenticationActions.LoginFailed};});AuthenticationActionCreators_defineProperty(AuthenticationActionCreators,"loginError",function(error){return{payload:error,type:AuthenticationActions.LoginError};});AuthenticationActionCreators_defineProperty(AuthenticationActionCreators,"clearError",function(){return{type:AuthenticationActions.ClearError};});AuthenticationActionCreators_defineProperty(AuthenticationActionCreators,"logoutSuccessful",function(){return{type:AuthenticationActions.LogoutSuccess};});AuthenticationActionCreators_defineProperty(AuthenticationActionCreators,"acquireIdTokenSuccess",function(token){return{payload:token,type:AuthenticationActions.AcquiredIdTokenSuccess};});AuthenticationActionCreators_defineProperty(AuthenticationActionCreators,"acquireIdTokenError",function(error){return{payload:error,type:AuthenticationActions.AcquiredIdTokenError};});AuthenticationActionCreators_defineProperty(AuthenticationActionCreators,"acquireAccessTokenSuccess",function(token){return{payload:token,type:AuthenticationActions.AcquiredAccessTokenSuccess};});AuthenticationActionCreators_defineProperty(AuthenticationActionCreators,"acquireAccessTokenError",function(error){return{payload:error,type:AuthenticationActions.AcquiredAccessTokenError};});AuthenticationActionCreators_defineProperty(AuthenticationActionCreators,"authenticatedStateChanged",function(state){return{payload:state,type:AuthenticationActions.AuthenticatedStateChanged};});
+// CONCATENATED MODULE: ./src/Logger.ts
+function _toConsumableArray(arr){return _arrayWithoutHoles(arr)||_iterableToArray(arr)||_nonIterableSpread();}function _nonIterableSpread(){throw new TypeError("Invalid attempt to spread non-iterable instance");}function _iterableToArray(iter){if(Symbol.iterator in Object(iter)||Object.prototype.toString.call(iter)==="[object Arguments]")return Array.from(iter);}function _arrayWithoutHoles(arr){if(Array.isArray(arr)){for(var i=0,arr2=new Array(arr.length);i<arr.length;i++){arr2[i]=arr[i];}return arr2;}}function Logger_classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||false;descriptor.configurable=true;if("value"in descriptor)descriptor.writable=true;Object.defineProperty(target,descriptor.key,descriptor);}}function _createClass(Constructor,protoProps,staticProps){if(protoProps)_defineProperties(Constructor.prototype,protoProps);if(staticProps)_defineProperties(Constructor,staticProps);return Constructor;}var Logger=function(){function Logger(){Logger_classCallCheck(this,Logger);}_createClass(Logger,null,[{key:"VERBOSE",value:function VERBOSE(message){var _console;for(var _len=arguments.length,optionalParams=new Array(_len>1?_len-1:0),_key=1;_key<_len;_key++){optionalParams[_key-1]=arguments[_key];}(_console=console).log.apply(_console,_toConsumableArray(['[VERBOSE] '+message].concat(optionalParams)));}},{key:"INFO",value:function INFO(message){var _console2;for(var _len2=arguments.length,optionalParams=new Array(_len2>1?_len2-1:0),_key2=1;_key2<_len2;_key2++){optionalParams[_key2-1]=arguments[_key2];}(_console2=console).info.apply(_console2,_toConsumableArray(['[INFO] '+message].concat(optionalParams)));}},{key:"WARN",value:function WARN(message){var _console3;for(var _len3=arguments.length,optionalParams=new Array(_len3>1?_len3-1:0),_key3=1;_key3<_len3;_key3++){optionalParams[_key3-1]=arguments[_key3];}(_console3=console).warn.apply(_console3,_toConsumableArray(['[WARN] '+message].concat(optionalParams)));}},{key:"ERROR",value:function ERROR(message){var _console4;for(var _len4=arguments.length,optionalParams=new Array(_len4>1?_len4-1:0),_key4=1;_key4<_len4;_key4++){optionalParams[_key4-1]=arguments[_key4];}(_console4=console).error.apply(_console4,_toConsumableArray(['[ERROR] '+message].concat(optionalParams)));}}]);return Logger;}();
+// CONCATENATED MODULE: ./src/MsalAuthProvider.ts
+function _typeof(obj){if(typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"){_typeof=function _typeof(obj){return typeof obj;};}else{_typeof=function _typeof(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};}return _typeof(obj);}function ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);if(enumerableOnly)symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;});keys.push.apply(keys,symbols);}return keys;}function _objectSpread(target){for(var i=1;i<arguments.length;i++){var source=arguments[i]!=null?arguments[i]:{};if(i%2){ownKeys(Object(source),true).forEach(function(key){MsalAuthProvider_defineProperty(target,key,source[key]);});}else if(Object.getOwnPropertyDescriptors){Object.defineProperties(target,Object.getOwnPropertyDescriptors(source));}else{ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}}return target;}function asyncGeneratorStep(gen,resolve,reject,_next,_throw,key,arg){try{var info=gen[key](arg);var value=info.value;}catch(error){reject(error);return;}if(info.done){resolve(value);}else{Promise.resolve(value).then(_next,_throw);}}function _asyncToGenerator(fn){return function(){var self=this,args=arguments;return new Promise(function(resolve,reject){var gen=fn.apply(self,args);function _next(value){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"next",value);}function _throw(err){asyncGeneratorStep(gen,resolve,reject,_next,_throw,"throw",err);}_next(undefined);});};}function MsalAuthProvider_classCallCheck(instance,Constructor){if(!(instance instanceof Constructor)){throw new TypeError("Cannot call a class as a function");}}function _possibleConstructorReturn(self,call){if(call&&(_typeof(call)==="object"||typeof call==="function")){return call;}return _assertThisInitialized(self);}function _assertThisInitialized(self){if(self===void 0){throw new ReferenceError("this hasn't been initialised - super() hasn't been called");}return self;}function _inherits(subClass,superClass){if(typeof superClass!=="function"&&superClass!==null){throw new TypeError("Super expression must either be null or a function");}subClass.prototype=Object.create(superClass&&superClass.prototype,{constructor:{value:subClass,writable:true,configurable:true}});if(superClass)_setPrototypeOf(subClass,superClass);}function _setPrototypeOf(o,p){_setPrototypeOf=Object.setPrototypeOf||function _setPrototypeOf(o,p){o.__proto__=p;return o;};return _setPrototypeOf(o,p);}function _get(target,property,receiver){if(typeof Reflect!=="undefined"&&Reflect.get){_get=Reflect.get;}else{_get=function _get(target,property,receiver){var base=_superPropBase(target,property);if(!base)return;var desc=Object.getOwnPropertyDescriptor(base,property);if(desc.get){return desc.get.call(receiver);}return desc.value;};}return _get(target,property,receiver||target);}function _superPropBase(object,property){while(!Object.prototype.hasOwnProperty.call(object,property)){object=_getPrototypeOf(object);if(object===null)break;}return object;}function _getPrototypeOf(o){_getPrototypeOf=Object.setPrototypeOf?Object.getPrototypeOf:function _getPrototypeOf(o){return o.__proto__||Object.getPrototypeOf(o);};return _getPrototypeOf(o);}function MsalAuthProvider_defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}var MsalAuthProvider_MsalAuthProvider=function(_UserAgentApplication){_inherits(MsalAuthProvider,_UserAgentApplication);function MsalAuthProvider(_config,_parameters){var _this;var _options=arguments.length>2&&arguments[2]!==undefined?arguments[2]:{loginType:LoginType.Popup,tokenRefreshUri:window.location.origin};MsalAuthProvider_classCallCheck(this,MsalAuthProvider);_this=_possibleConstructorReturn(this,_getPrototypeOf(MsalAuthProvider).call(this,_config));MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"authenticationState",void 0);MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"UserAgentApplication",void 0);MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"_reduxStore",void 0);MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"_parameters",void 0);MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"_options",void 0);MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"_accountInfo",void 0);MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"_error",void 0);MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"_onAuthenticationStateHandlers",new Set());MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"_onAccountInfoHandlers",new Set());MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"_onErrorHandlers",new Set());MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"_actionQueue",[]);MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"login",function(){var _ref=_asyncToGenerator(regeneratorRuntime.mark(function _callee(parameters){var params,error,providerOptions;return regeneratorRuntime.wrap(function _callee$(_context){while(1){switch(_context.prev=_context.next){case 0:params=parameters||_this.getAuthenticationParameters();error=_this.getError();if(error&&error.errorCode!=='block_token_requests'){_this.setError(null);}providerOptions=_this.getProviderOptions();if(!(providerOptions.loginType===LoginType.Redirect)){_context.next=9;break;}_this.setAuthenticationState(AuthenticationState.InProgress);try{_this.loginRedirect(params);}catch(error){Logger.ERROR(error);_this.setError(error);_this.setAuthenticationState(AuthenticationState.Unauthenticated);}_context.next=23;break;case 9:if(!(providerOptions.loginType===LoginType.Popup)){_context.next=23;break;}_context.prev=10;_this.setAuthenticationState(AuthenticationState.InProgress);_context.next=14;return _this.loginPopup(params);case 14:_context.next=21;break;case 16:_context.prev=16;_context.t0=_context["catch"](10);Logger.ERROR(_context.t0);_this.setError(_context.t0);_this.setAuthenticationState(AuthenticationState.Unauthenticated);case 21:_context.next=23;return _this.processLogin();case 23:case"end":return _context.stop();}}},_callee,null,[[10,16]]);}));return function(_x){return _ref.apply(this,arguments);};}());MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"logout",function(){_get(_getPrototypeOf(MsalAuthProvider.prototype),"logout",_assertThisInitialized(_this)).call(_assertThisInitialized(_this));_this.dispatchAction(AuthenticationActionCreators.logoutSuccessful());});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"getAccountInfo",function(){return _this._accountInfo?_objectSpread({},_this._accountInfo):null;});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"getAccessToken",function(){var _ref2=_asyncToGenerator(regeneratorRuntime.mark(function _callee2(parameters){var providerOptions,refreshParams,response,loginParams,_response;return regeneratorRuntime.wrap(function _callee2$(_context2){while(1){switch(_context2.prev=_context2.next){case 0:providerOptions=_this.getProviderOptions();refreshParams=_objectSpread({},parameters||_this.getAuthenticationParameters(),{redirectUri:parameters&&parameters.redirectUri||providerOptions.tokenRefreshUri});if(refreshParams.extraQueryParameters&&refreshParams.extraQueryParameters.domain_hint){delete refreshParams.extraQueryParameters.domain_hint;}_context2.prev=3;_context2.next=6;return _this.acquireTokenSilent(refreshParams);case 6:response=_context2.sent;_this.handleAcquireTokenSuccess(response);_this.setAuthenticationState(AuthenticationState.Authenticated);return _context2.abrupt("return",new AccessTokenResponse_AccessTokenResponse(response));case 12:_context2.prev=12;_context2.t0=_context2["catch"](3);loginParams=_objectSpread({},parameters||_this.getAuthenticationParameters());_this.dispatchAction(AuthenticationActionCreators.acquireAccessTokenError(_context2.t0));_context2.next=18;return _this.loginToRefreshToken(_context2.t0,loginParams);case 18:_response=_context2.sent;return _context2.abrupt("return",new AccessTokenResponse_AccessTokenResponse(_response));case 20:case"end":return _context2.stop();}}},_callee2,null,[[3,12]]);}));return function(_x2){return _ref2.apply(this,arguments);};}());MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"getIdToken",function(){var _ref3=_asyncToGenerator(regeneratorRuntime.mark(function _callee3(parameters){var providerOptions,config,clientId,refreshParams,response,loginParams,account,_response2;return regeneratorRuntime.wrap(function _callee3$(_context3){while(1){switch(_context3.prev=_context3.next){case 0:providerOptions=_this.getProviderOptions();config=_this.getCurrentConfiguration();clientId=config.auth.clientId;refreshParams=_objectSpread({},parameters||_this.getAuthenticationParameters(),{redirectUri:parameters&&parameters.redirectUri||providerOptions.tokenRefreshUri,scopes:[clientId]});if(refreshParams.extraQueryParameters&&refreshParams.extraQueryParameters.domain_hint){delete refreshParams.extraQueryParameters.domain_hint;}_context3.prev=5;_context3.next=8;return _this.acquireTokenSilent(refreshParams);case 8:response=_context3.sent;_this.handleAcquireTokenSuccess(response);_this.setAuthenticationState(AuthenticationState.Authenticated);return _context3.abrupt("return",new IdTokenResponse_IdTokenResponse(response));case 14:_context3.prev=14;_context3.t0=_context3["catch"](5);loginParams=_objectSpread({},parameters||_this.getAuthenticationParameters());account=_this.getAccount();if(account&&(!parameters||!parameters.loginHint)){loginParams.loginHint=account.userName;}_this.dispatchAction(AuthenticationActionCreators.acquireIdTokenError(_context3.t0));_context3.next=22;return _this.loginToRefreshToken(_context3.t0,loginParams);case 22:_response2=_context3.sent;return _context3.abrupt("return",new IdTokenResponse_IdTokenResponse(_response2));case 24:case"end":return _context3.stop();}}},_callee3,null,[[5,14]]);}));return function(_x3){return _ref3.apply(this,arguments);};}());MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"getAuthenticationParameters",function(){return _objectSpread({},_this._parameters);});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"getError",function(){return _this._error?_objectSpread({},_this._error):null;});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"setAuthenticationParameters",function(parameters){_this._parameters=_objectSpread({},parameters);});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"getProviderOptions",function(){return _objectSpread({},_this._options);});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"setProviderOptions",function(options){_this._options=_objectSpread({},options);if(options.loginType===LoginType.Redirect){_this.handleRedirectCallback(_this.authenticationRedirectCallback);}});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"registerReduxStore",function(store){_this._reduxStore=store;while(_this._actionQueue.length){var action=_this._actionQueue.shift();if(action){_this.dispatchAction(action);}}});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"registerAuthenticationStateHandler",function(listener){_this._onAuthenticationStateHandlers.add(listener);listener(_this.authenticationState);});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"unregisterAuthenticationStateHandler",function(listener){_this._onAuthenticationStateHandlers["delete"](listener);});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"registerAcountInfoHandler",function(listener){_this._onAccountInfoHandlers.add(listener);listener(_this._accountInfo);});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"unregisterAccountInfoHandler",function(listener){_this._onAccountInfoHandlers["delete"](listener);});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"registerErrorHandler",function(listener){_this._onErrorHandlers.add(listener);listener(_this._error);});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"unregisterErrorHandler",function(listener){_this._onErrorHandlers["delete"](listener);});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"setError",function(error){_this._error=error?_objectSpread({},error):null;if(error){_this.dispatchAction(AuthenticationActionCreators.loginError(error));}_this._onErrorHandlers.forEach(function(listener){return listener(_this._error);});return _objectSpread({},_this._error);});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"loginToRefreshToken",function(){var _ref4=_asyncToGenerator(regeneratorRuntime.mark(function _callee4(error,parameters){var providerOptions,params,response;return regeneratorRuntime.wrap(function _callee4$(_context4){while(1){switch(_context4.prev=_context4.next){case 0:providerOptions=_this.getProviderOptions();params=parameters||_this.getAuthenticationParameters();if(!(error instanceof external_msal_["InteractionRequiredAuthError"])){_context4.next=23;break;}if(!(providerOptions.loginType===LoginType.Redirect)){_context4.next=6;break;}_this.acquireTokenRedirect(params);return _context4.abrupt("return",new Promise(function(resolve){return resolve();}));case 6:_context4.prev=6;_context4.next=9;return _this.acquireTokenPopup(params);case 9:response=_context4.sent;_this.handleAcquireTokenSuccess(response);_this.setAuthenticationState(AuthenticationState.Authenticated);return _context4.abrupt("return",response);case 15:_context4.prev=15;_context4.t0=_context4["catch"](6);Logger.ERROR(_context4.t0);_this.setError(_context4.t0);_this.setAuthenticationState(AuthenticationState.Unauthenticated);throw _context4.t0;case 21:_context4.next=27;break;case 23:Logger.ERROR(error);_this.setError(error);_this.setAuthenticationState(AuthenticationState.Unauthenticated);throw error;case 27:case"end":return _context4.stop();}}},_callee4,null,[[6,15]]);}));return function(_x4,_x5){return _ref4.apply(this,arguments);};}());MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"authenticationRedirectCallback",function(error){if(error){_this.setError(error);}_this.processLogin();});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"initializeProvider",_asyncToGenerator(regeneratorRuntime.mark(function _callee5(){return regeneratorRuntime.wrap(function _callee5$(_context5){while(1){switch(_context5.prev=_context5.next){case 0:_this.dispatchAction(AuthenticationActionCreators.initializing());_context5.next=3;return _this.processLogin();case 3:_this.dispatchAction(AuthenticationActionCreators.initialized());case 4:case"end":return _context5.stop();}}},_callee5);})));MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"processLogin",_asyncToGenerator(regeneratorRuntime.mark(function _callee6(){return regeneratorRuntime.wrap(function _callee6$(_context6){while(1){switch(_context6.prev=_context6.next){case 0:if(!_this.getError()){_context6.next=5;break;}_this.handleLoginFailed();_this.setAuthenticationState(AuthenticationState.Unauthenticated);_context6.next=19;break;case 5:if(!_this.getAccount()){_context6.next=18;break;}_context6.prev=6;_context6.next=9;return _this.getIdToken();case 9:_this.handleLoginSuccess();_context6.next=16;break;case 12:_context6.prev=12;_context6.t0=_context6["catch"](6);if(!(_context6.t0 instanceof external_msal_["ClientAuthError"]&&_context6.t0.errorCode==='user_login_error')){Logger.ERROR(_context6.t0);_this.setError(_context6.t0);}_this.setAuthenticationState(AuthenticationState.Unauthenticated);case 16:_context6.next=19;break;case 18:if(_this.getLoginInProgress()){_this.setAuthenticationState(AuthenticationState.InProgress);}else{_this.setAuthenticationState(AuthenticationState.Unauthenticated);}case 19:case"end":return _context6.stop();}}},_callee6,null,[[6,12]]);})));MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"setAuthenticationState",function(state){if(_this.authenticationState!==state){_this.authenticationState=state;_this.dispatchAction(AuthenticationActionCreators.authenticatedStateChanged(state));_this._onAuthenticationStateHandlers.forEach(function(listener){return listener(state);});}return _this.authenticationState;});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"setAccountInfo",function(response){var accountInfo=_this.getAccountInfo()||{account:response.account};if(response.tokenType===TokenType.IdToken){accountInfo.jwtIdToken=response.idToken.rawIdToken;}else if(response.tokenType===TokenType.AccessToken){accountInfo.jwtAccessToken=response.accessToken;}_this._accountInfo=_objectSpread({},accountInfo);_this._onAccountInfoHandlers.forEach(function(listener){return listener(_this._accountInfo);});return _objectSpread({},_this._accountInfo);});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"dispatchAction",function(action){if(_this._reduxStore){_this._reduxStore.dispatch(action);}else{_this._actionQueue.push(action);}});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"handleAcquireTokenSuccess",function(response){_this.setAccountInfo(response);if(response.tokenType===TokenType.IdToken){var token=new IdTokenResponse_IdTokenResponse(response);_this.dispatchAction(AuthenticationActionCreators.acquireIdTokenSuccess(token));}else if(response.tokenType===TokenType.AccessToken){var _token=new AccessTokenResponse_AccessTokenResponse(response);_this.dispatchAction(AuthenticationActionCreators.acquireAccessTokenSuccess(_token));}});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"handleLoginFailed",function(){var error=_this.getError();if(error){_this.dispatchAction(AuthenticationActionCreators.loginFailed());}});MsalAuthProvider_defineProperty(_assertThisInitialized(_this),"handleLoginSuccess",function(){var account=_this.getAccountInfo();if(account){_this.dispatchAction(AuthenticationActionCreators.loginSuccessful(account));}});_this.UserAgentApplication=_assertThisInitialized(_this);_this.setAuthenticationParameters(_parameters);_this.setProviderOptions(_options);_this.initializeProvider();return _this;}return MsalAuthProvider;}(external_msal_["UserAgentApplication"]);
+// EXTERNAL MODULE: external "react"
+var external_react_ = __webpack_require__(0);
+
+// CONCATENATED MODULE: ./src/components/AzureAD.tsx
+function _slicedToArray(arr,i){return _arrayWithHoles(arr)||_iterableToArrayLimit(arr,i)||_nonIterableRest();}function _nonIterableRest(){throw new TypeError("Invalid attempt to destructure non-iterable instance");}function _iterableToArrayLimit(arr,i){if(!(Symbol.iterator in Object(arr)||Object.prototype.toString.call(arr)==="[object Arguments]")){return;}var _arr=[];var _n=true;var _d=false;var _e=undefined;try{for(var _i=arr[Symbol.iterator](),_s;!(_n=(_s=_i.next()).done);_n=true){_arr.push(_s.value);if(i&&_arr.length===i)break;}}catch(err){_d=true;_e=err;}finally{try{if(!_n&&_i["return"]!=null)_i["return"]();}finally{if(_d)throw _e;}}return _arr;}function _arrayWithHoles(arr){if(Array.isArray(arr))return arr;}var AzureAD_AzureAD=function AzureAD(props){var authenticatedFunction=props.authenticatedFunction,unauthenticatedFunction=props.unauthenticatedFunction,provider=props.provider,forceLogin=props.forceLogin,accountInfoCallback=props.accountInfoCallback;var _useState=Object(external_react_["useState"])(provider.getAccountInfo()),_useState2=_slicedToArray(_useState,2),accountInfo=_useState2[0],_setAccountInfo=_useState2[1];var _useState3=Object(external_react_["useState"])(provider.authenticationState),_useState4=_slicedToArray(_useState3,2),authenticationState=_useState4[0],_setAuthenticationState=_useState4[1];var _useState5=Object(external_react_["useState"])(provider.getError()),_useState6=_slicedToArray(_useState5,2),error=_useState6[0],_setError=_useState6[1];Object(external_react_["useEffect"])(function(){provider.registerAuthenticationStateHandler(setAuthenticationState);provider.registerAcountInfoHandler(onAccountInfoChanged);provider.registerErrorHandler(setError);if(props.reduxStore){provider.registerReduxStore(props.reduxStore);}if(forceLogin&&authenticationState===AuthenticationState.Unauthenticated&&!error){login();}return function(){provider.unregisterAuthenticationStateHandler(setAuthenticationState);provider.unregisterAccountInfoHandler(onAccountInfoChanged);provider.unregisterErrorHandler(setError);};},[authenticationState,accountInfo,error]);var login=Object(external_react_["useCallback"])(function(){provider.login();},[provider]);var logout=Object(external_react_["useCallback"])(function(){if(authenticationState!==AuthenticationState.Authenticated){return;}provider.logout();},[authenticationState,provider]);var setAuthenticationState=Object(external_react_["useCallback"])(function(newState){if(newState!==authenticationState){_setAuthenticationState(newState);if(newState===AuthenticationState.Unauthenticated&&forceLogin&&!error){login();}}},[authenticationState,forceLogin,error]);var setError=Object(external_react_["useCallback"])(function(newError){if(newError!==error){_setError(newError);}},[error]);var onAccountInfoChanged=Object(external_react_["useCallback"])(function(newAccountInfo){_setAccountInfo(newAccountInfo);if(accountInfoCallback){console.warn('Warning! The accountInfoCallback callback has been deprecated and will be removed in a future release.');accountInfoCallback(newAccountInfo);}},[accountInfoCallback]);var childrenFunctionProps=Object(external_react_["useMemo"])(function(){return{accountInfo:accountInfo,authenticationState:authenticationState,error:error,login:login,logout:logout};},[accountInfo,authenticationState,error,login,logout]);function getChildrenOrFunction(children,childrenProps){if(children){if(isChildrenFunction(children)){return children(childrenProps);}else{return children;}}else{return null;}}function isChildrenFunction(children){return typeof children=='function'||false;}switch(authenticationState){case AuthenticationState.Authenticated:if(authenticatedFunction){var authFunctionResult=authenticatedFunction(logout);console.warn('Warning! The authenticatedFunction callback has been deprecated and will be removed in a future release.');if(authFunctionResult){return authFunctionResult;}}return getChildrenOrFunction(props.children,childrenFunctionProps);case AuthenticationState.Unauthenticated:if(unauthenticatedFunction){console.warn('Warning! The unauthenticatedFunction callback has been deprecated and will be removed in a future release.');return unauthenticatedFunction(login)||null;}case AuthenticationState.InProgress:if(isChildrenFunction(props.children)){return getChildrenOrFunction(props.children,childrenFunctionProps);}return null;default:return null;}};AzureAD_AzureAD.displayName='AzureAD';
+// CONCATENATED MODULE: ./src/components/withAuthentication.tsx
+function withAuthentication_ownKeys(object,enumerableOnly){var keys=Object.keys(object);if(Object.getOwnPropertySymbols){var symbols=Object.getOwnPropertySymbols(object);if(enumerableOnly)symbols=symbols.filter(function(sym){return Object.getOwnPropertyDescriptor(object,sym).enumerable;});keys.push.apply(keys,symbols);}return keys;}function withAuthentication_objectSpread(target){for(var i=1;i<arguments.length;i++){var source=arguments[i]!=null?arguments[i]:{};if(i%2){withAuthentication_ownKeys(Object(source),true).forEach(function(key){withAuthentication_defineProperty(target,key,source[key]);});}else if(Object.getOwnPropertyDescriptors){Object.defineProperties(target,Object.getOwnPropertyDescriptors(source));}else{withAuthentication_ownKeys(Object(source)).forEach(function(key){Object.defineProperty(target,key,Object.getOwnPropertyDescriptor(source,key));});}}return target;}function withAuthentication_defineProperty(obj,key,value){if(key in obj){Object.defineProperty(obj,key,{value:value,enumerable:true,configurable:true,writable:true});}else{obj[key]=value;}return obj;}var withAuthentication_withAuthentication=function withAuthentication(WrappedComponent,parameters){var withAuthentication=function withAuthentication(props){var propParams=withAuthentication_objectSpread({forceLogin:true},parameters);withAuthentication.displayName="withAuthentication(".concat(WrappedComponent.displayName||WrappedComponent.name);return external_react_["createElement"](AzureAD_AzureAD,propParams,external_react_["createElement"](WrappedComponent,props));};return withAuthentication;};
+// CONCATENATED MODULE: ./src/index.ts
+/* concated harmony reexport IAccountInfo */__webpack_require__.d(__webpack_exports__, "IAccountInfo", function() { return interfaces["IAccountInfo"]; });
+/* concated harmony reexport IMsalAuthProviderConfig */__webpack_require__.d(__webpack_exports__, "IMsalAuthProviderConfig", function() { return interfaces["IMsalAuthProviderConfig"]; });
+/* concated harmony reexport AuthenticationActions */__webpack_require__.d(__webpack_exports__, "AuthenticationActions", function() { return AuthenticationActions; });
+/* concated harmony reexport AuthenticationState */__webpack_require__.d(__webpack_exports__, "AuthenticationState", function() { return AuthenticationState; });
+/* concated harmony reexport LoginType */__webpack_require__.d(__webpack_exports__, "LoginType", function() { return LoginType; });
+/* concated harmony reexport AccessTokenResponse */__webpack_require__.d(__webpack_exports__, "AccessTokenResponse", function() { return AccessTokenResponse_AccessTokenResponse; });
+/* concated harmony reexport IdTokenResponse */__webpack_require__.d(__webpack_exports__, "IdTokenResponse", function() { return IdTokenResponse_IdTokenResponse; });
+/* concated harmony reexport MsalAuthProvider */__webpack_require__.d(__webpack_exports__, "MsalAuthProvider", function() { return MsalAuthProvider_MsalAuthProvider; });
+/* concated harmony reexport AuthenticationActionCreators */__webpack_require__.d(__webpack_exports__, "AuthenticationActionCreators", function() { return AuthenticationActionCreators; });
+/* concated harmony reexport AzureAD */__webpack_require__.d(__webpack_exports__, "AzureAD", function() { return AzureAD_AzureAD; });
+/* concated harmony reexport withAuthentication */__webpack_require__.d(__webpack_exports__, "withAuthentication", function() { return withAuthentication_withAuthentication; });
+/* harmony default export */ var src = __webpack_exports__["default"] = (AzureAD_AzureAD);
+
+/***/ })
+/******/ ]);
+});
+//# sourceMappingURL=react-aad-msal.js.map

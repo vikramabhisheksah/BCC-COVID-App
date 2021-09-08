@@ -1,0 +1,341 @@
+html,
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  text-align: left;
+  background-color: #f5f7fb;
+
+}
+#App {
+  height: 100vh;
+}
+#page-wrap {
+  text-align: center;
+  overflow: auto;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.h4{
+  font-family: inherit;
+  color:inherit;
+  font-weight: inherit;
+  font-size: 20px;
+  
+}
+
+.fresh-form {
+
+  width: 35%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  /* border-top: 8px solid steelblue; */
+  border-top: 8px solid #0e1031;
+  border-bottom: 8px solid #0e1031;
+
+}
+
+.fresh-label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0rem;
+  font-size: 15px;
+  color: rgb(71, 70, 70);
+}
+
+.fresh-title {
+  margin-bottom: 0.5rem;
+}
+
+.fresh-field-wrapper {
+  margin-bottom: 1.5rem;
+  color:inherit;
+}
+
+.fresh-input {
+  width: 100%;
+  background-color: rgb(243, 239, 239);
+  border: 0;
+  padding: 1rem;
+  font-weight: inherit;
+}
+
+.fresh-input-textarea {
+  min-height: 150px;
+}
+
+.fresh-button {
+  border: 0;
+  background-color: #0e1031;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+.navbar-custom {
+  background-color: #0e1031;
+}
+
+.Dashbored_div {
+  width: 95%;
+  margin: 2rem;
+  background-color: white;
+  /* padding: 2rem; */
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  border-top: 8px solid #0e1031;
+  font-size: small;
+ 
+}
+
+.UploaderNreview {
+  margin-top: 6rem;
+  float: right;
+  position: relative;
+}
+.Download_btn {
+  /* margin-top: 2rem; */
+  float: right;
+  position: relative;
+  max-width: 20%;
+}
+.cust_header-class {
+  background-color: #0e1031;
+  vertical-align: top;
+  color:#EBF1FF;
+}
+.div_approve_reject {
+  margin: 5px;
+  position: relative;
+  display: inline-block;
+}
+
+.div_approve_reject_wrapper{
+  float:right;
+  margin: 2px;
+  padding:2px;
+}
+.cust_btn-cls {
+  margin: 5px;
+}
+
+.hide_data {
+  display: none;
+}
+
+.reminder {
+  color: #0e1031;
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+}
+/* .filter_style {
+  font-size: 15px;
+  background-color: aqua;
+} */
+.div_export{
+  margin: 15px;
+  float: left;
+}
+
+.submit{
+  display: inline-block;
+}
+.rejection_reason {
+  width: 100%;
+  background-color: rgb(243, 239, 239);
+  border: 0;
+  padding: 1rem;
+  font-weight: bold;
+  display: inline-block;
+}
+.advanced-Search{
+  margin: 5px;
+  padding:10px ;
+  float: left;
+}
+.line {
+  margin-bottom: 18px;
+}
+.bm-item {
+  display: inline-block;
+
+  /* Our sidebar item styling */
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: #d1d1d1;
+  transition: color 0.2s;
+}
+.bm-item:hover {
+  color: white;
+}
+
+.bm-item:focus {
+  outline: none;
+}
+.bm-burger-button {
+  position: absolute;
+  width: 30px;
+  height: 18px;
+  left: 36px;
+  top: 66px;
+}
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #888;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #0e1031;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+.bm-menu a {
+  color: #b8b7ad;
+}
+
+.bm-menu a:hover,
+a:focus {
+  color: #0e1031;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+}
+
+.bm-item-list a {
+  padding: 0.8em;
+}
+
+.bm-item-list a span {
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#side-bar h2 {
+  margin: 0 auto;
+  padding: 2em 1em;
+  color: rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
+}
+#side-bar h2 i {
+  margin-left: 0.2em;
+}
+#side-bar h2 span {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+#side-bar a {
+  padding: 1em;
+  text-transform: uppercase;
+  transition: background 0.3s, box-shadow 0.3s;
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0.2);
+}
+#side-bar a span {
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+#side-bar a:hover,
+#side-bar a:focus {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 -1px rgba(0, 0, 0, 0);
+  color: #b8b7ad;
+}
+.select-action{
+  /* width: 500px; */
+  width: 35%;
+  margin: 1px auto;
+  margin-bottom: 3px;
+  background-color: white;
+  padding: 0.5rem;
+  padding-bottom:6rem ;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  border-top: 8px solid #0e1031;
+  border-bottom: 8px solid #0e1031;
+}
+
+.fresh-field-wrapper_select_role{
+  width: 35%;
+  margin: 1px auto;
+  background-color: white;
+  padding: 0.5rem;
+  padding-bottom:6rem ;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+  border-top: 8px solid #0e1031;
+  border-bottom: 8px solid #0e1031;
+  color:inherit;
+}
+
+.logo{
+  width:14%;
+  float: left;
+  background-color: white;
+}
+
+/* .navbar-custom{
+  background-color: white;
+} */
+.userprofile{
+  width:20%;
+}
+.username{
+  width:80%
+}
+.color-nav{
+  background-color:  #0e1031;
+}
+.linkText{ color: #b8b7ad;}
+
+.admin-panel{
+height: 80%;
+width : 100%;
+position: absolute;
+background-color: white;
+}
+
+.container-body{
+  font-size: 10px;
+}
+  

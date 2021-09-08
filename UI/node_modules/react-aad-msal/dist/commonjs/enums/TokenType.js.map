@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/enums/TokenType.ts"],"names":["TokenType"],"mappings":";;;;;;IAAYA,S;;;WAAAA,S;AAAAA,EAAAA,S;AAAAA,EAAAA,S;GAAAA,S,yBAAAA,S","sourcesContent":["export enum TokenType {\n  IdToken = 'id_token',\n  AccessToken = 'access_token',\n}\n"],"file":"TokenType.js"}

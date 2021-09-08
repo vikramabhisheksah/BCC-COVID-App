@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/enums/LoginType.ts"],"names":["LoginType"],"mappings":";;;;;;IAAYA,S;;;WAAAA,S;AAAAA,EAAAA,S,CAAAA,S;AAAAA,EAAAA,S,CAAAA,S;GAAAA,S,yBAAAA,S","sourcesContent":["export enum LoginType {\n  Popup,\n  Redirect,\n}\n"],"file":"LoginType.js"}
