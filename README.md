@@ -10,4 +10,4 @@
 
 <img width="1440" alt="Screen Shot 2021-09-11 at 10 31 35 PM" src="https://user-images.githubusercontent.com/27946181/146654030-19f87d64-823c-4fd8-9d4b-30e412f498ef.png">
 
-<img width="1440" alt="Screen Shot 2021-09-11 at 10 31 28 PM" src="https://user-images.githubusercontent.com/27946181/146654031-bcce6956-b774-4ba4-89b7-3604fe0e7b19.png">
+<img width="1435" alt="Screen Shot 2021-09-11 at 10 31 28 PM" src="https://user-images.githubusercontent.com/27946181/146654060-edeae88a-07bd-4b73-80bd-cad7bf67a6f5.png">
